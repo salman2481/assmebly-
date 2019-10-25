@@ -36,7 +36,11 @@ L2:
 
 	   _exit: 
 	    call readint
-  
+  Call DumpRegs
+  Mov Eax, 5
+  Sub Eax, 10
+  Call DumpRegs 
+  Call ReadInt  
   ; Stoping Console from disappearning
   exit
  main ENDP
