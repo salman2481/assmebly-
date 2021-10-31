@@ -24,6 +24,14 @@ main PROC
    cmp al,22
    jl L2
    jg L1
+   main PROC
+  mov edx,offset string 
+   call WriteString
+   call readint
+   mov s,eax
+   cmp al,22
+   jl L2
+   jg L1
 L1:
 	mov edx, offset msg
 	  call writestring  
